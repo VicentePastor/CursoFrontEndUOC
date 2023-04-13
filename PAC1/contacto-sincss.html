@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+</head>
+<body>
+    <h1>Contacta conmigo</h1>
+
+    <p>Rellena el siguiente formulario y me pondré en contacto!</p>
+
+    <form action="/action_page.php" method="get" target="_blank">
+        <label for="nombre">Dime como te llamas:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="email">Dejame aqui tu correo electrónico:</label>
+        <input type="text" id="email" name="email"><br>
+        <textarea name="texto" rows="3" cols="50">Cuentame algo sobre ti.</textarea><br>
+        <label for="polpri">¿Aceptas nuestra <a href="https://www.google.es">politica de privacidad</a>?</label>
+        <input type="checkbox" id="polpri" name="polpri" value="yes">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
