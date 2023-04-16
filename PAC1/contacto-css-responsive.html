@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabecera Menu-->
+    <header id="inicio">
+        <img id="imgfondocab" src="assets/img/teclado2.jpg">
+        <nav id="desplegable">                           
+            <input type="checkbox" id="boton">
+            <label for="boton"> ☰ </label>
+            <ul id="menu">
+                <li><a href="index-css-responsive.html">VICENTE PASTOR </a>|</li>
+                <li><a href="cv-css-responsive.html#formacion"> Formación </a>|</li>
+                <li><a href="cv-css-responsive.html#conocimientos"> Conocimientos </a>|</li>
+                <li><a href="cv-css-responsive.html#experiencia"> Experiencia </a>|</li>
+                <li><a href="cv-css-responsive.html#idiomas"> Idiomas </a>|</li>
+                <li><a href="contacto-css-responsive.html"> Contacto </a></li>
+            </ul>    
+        </nav>
+        
+    </header>
+    <footer>
+        <h1>Contacta conmigo</h1>
+
+        <p>Rellena el siguiente formulario y me pondré en contacto!</p>
+
+        <form id="formulariocont" action="/action_page.php" method="get" target="_blank">
+            <input type="text" id="nombre" name="nombre" placeholder="Dime como te llamas"><br>
+            <input type="text" id="email" name="email" placeholder="Dejame tu email"><br>
+            <textarea name="texto" rows="3" cols="50">Cuentame algo sobre ti.</textarea><br>
+            <label for="polpri">¿Aceptas nuestra <a href="https://www.google.es">politica de privacidad</a>?</label>
+            <input type="checkbox" id="polpri" name="polpri" value="yes">
+            <input type="submit" value="Enviar">
+        </form>
+    </footer>
+    
+</body>
+</html>

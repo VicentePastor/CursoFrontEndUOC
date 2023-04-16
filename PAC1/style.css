@@ -1,51 +1,190 @@
-/*******************Index*********************************/
-#cabecera {
-    position: relative;
-  }
-  
-#vicente {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -100%);
-    font-size: 30px;
-    color: rgb(10, 10, 36);
-    text-shadow: 2px 2px 4px #474141;
-    
-  }
-  
-#imgcabecera { 
-    width: 100%;
-    height: 70%;
-    opacity: 0.6;
-  }
-
-
-
-/************************CV***************************/
-ul {
+body{
+    background-color: #3a3939;
+    font-family: 'Helvetica';
+}
+ul{
     list-style: none;
 }
-li {
+a{
+    color: beige;
+    text-decoration:none;
+}
+h2{
+    color: beige;
+}
+#imgfondocab{    
+    width:100%;
+}
+
+#mybody{
+    color: white;
+    font-family: 'Helvetica';
+    padding-top: 14vw;
+}
+
+section{  
+    margin:auto;
+    width: 90%;
+    max-width: 1080px;
+}
+.columna{
+    margin: center;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    position: center;
+    height:max-content;
+    width: 90%;
+    margin:auto;
+    border-radius: 45px;
+    background-color: #583a3a;
+    padding-bottom: 1%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    align-content: center;
+}
+.contfila{
+    width: 50%;
+    border-radius: 45px;
+    background-color: #583a3a;
+}
+section h2{
+    padding-top: 2%;
+    margin-left: 10%;
+}
+section h3, h4, table{
+    margin-left: 5%;
+}
+section table{
+    margin-left: 5%;
+    text-align: center;
+}
+table, td, th{
+    border: 3px solid;
+    border-color: #000000;
+    border-collapse: collapse;
+}
+#conocimientos ul{
+    line-height: 80%;
+}
+#conocimientos ul li p{
+    padding-left: 10%;
+}
+#datos h1, h3{
+    line-height: 50%;
+}
+div p{
+    padding: 5%;
+}
+#datos h1{
+    padding:5%;
+}
+footer form{
+    display: block;
+}
+
+/*******************Responsive************************/
+@media only screen and (max-width: 600px) {
+    header ul{
+        display: none;
+    }
+    input:checked ~ ul {
+        display: block;
+    }
+    header input{
+        display: none;
+    }
+    header label {
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        user-select: none;
+    }
+    header li {
+        display: block;
+        background: rgb(0, 0, 0);
+        padding: 10px;
+        list-style: none;
+      }
+
+    
+    body{
+        background-color: rgb(255, 166, 0);
+        font-size: smaller;
+    }
+    .columna{
+        flex-direction: column;
+        width: 100%;
+    }
+    .contfila{
+        position: center;
+        height:max-content;
+        width: 90%;
+        margin:auto;
+        border-radius: 45px;
+        background-color: #583a3a;
+        padding-bottom: 1%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        align-content: center;
+    }
+    
+}
+@media only screen and (min-width: 601px) {
+/** Menu inicio **/
+header input, header label{
+    display: none;
+}
+nav{
+    height: 50px;
+    color: beige;
+    text-align: center;
+    font-weight: bold;
+}
+.controlmenu{
+    display: none;
+}
+nav ul{
+    list-style: none;
+    display: inline-block;
+    top:0px;
+}
+nav ul li {
     display:inline;
 }
 #inicio{
-    position:fixed;
-    text-align:center; 
-    padding: 10px 5px 10px 5px;    
-    top: 0px;                   
-    left: 0px;           
-    width:100%; 
-    background-color:#696767; 
-    color: rgb(253, 252, 252); 
-    z-index: 1;
+    position:fixed;        
+    width:100%;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: #000000;
 }
-#link{
-    color: rgb(0, 0, 0);
+footer, #cuerpo{
+    padding-top: 14vw;
+    }
 }
-.titulo1{
-    font-size: 25px;
+
+@media only screen and (min-width: 601px) and (max-width: 768px){
+    body{
+        background-color: rgb(255, 0, 0);
+        font-size:medium;
+    }
 }
-.titulo2{
-    font-size: 18px;
+@media only screen and (min-width: 769px) and (max-width: 992px){
+    body{
+        background-color: rgb(0, 255, 21);
+        font-size:large;
+    }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px){
+    body{
+        background-color: rgb(4, 0, 255);
+    }
 }
